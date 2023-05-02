@@ -67,7 +67,7 @@ if run_as_module:
             sys.exit()
     else:
         ultroid_bot = UltroidClient(
-            validate_session(Var.SESSION, LOGS),
+            validate_session(Var.BQCeQPROhmoNKtAx4xeKlL4E6lgRXikFuO-jhodjeyW6vtaoJUnvcda5YnFHbQoafL1_1_j3mgOM2dz-3V5-QSWxSi1nqioNz_rZqknGxi-LxOm4SKYdZR1I7tENDf5Jx2CkA5hduBGrnvC9PjsZbFB1rwsgoe6nd-CX2Oj5-KUD2Yn9oCT4Vm78WiUpindUAa-MK73DDyEVMf2yDGp5hCMkwsKtBNMZEJ3CvMGbIZ9lfW4tIx6cUtwloh_fNF0TitAVm2FQTQjXtKUNwzjHKmcCxlBDcV2kvMc2dI4AHWiWd6IxMvqmgqVruZh_N1AgNr__0FnKGVavUJ4EgT3-5ypnAAAAAWHH8KsA, LOGS),
             udB=udB,
             app_version=ultroid_version,
             device_model="Ultroid",
@@ -77,14 +77,14 @@ if run_as_module:
     if USER_MODE:
         asst = ultroid_bot
     else:
-        asst = UltroidClient(None, bot_token=udB.get_key("BOT_TOKEN"), udB=udB)
+        asst = UltroidClient(None, bot_token=udB.get_key("6211772735:AAFzOZQRRfagg-z2DcRV7bOBzrSF48T5cEI"), udB=udB)
 
     if BOT_MODE:
         ultroid_bot = asst
-        if udB.get_key("OWNER_ID"):
+        if udB.get_key("5935460523"):
             try:
                 ultroid_bot.me = ultroid_bot.run_in_loop(
-                    ultroid_bot.get_entity(udB.get_key("OWNER_ID"))
+                    ultroid_bot.get_entity(udB.get_key("5935460523"))
                 )
             except Exception as er:
                 LOGS.exception(er)
