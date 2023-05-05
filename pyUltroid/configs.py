@@ -20,26 +20,26 @@ except ImportError:
 class Var:
     # mandatory
     API_ID = (
-        int(sys.argv[1]) if len(sys.argv) > 1 else config("API_ID", default=6, cast=int)
+        int(sys.argv[1]) if len(sys.argv) > 1 else config("API_ID", "25357017)
     )
     API_HASH = (
         sys.argv[2]
         if len(sys.argv) > 2
-        else config("API_HASH", default="eb06d4abfb49dc3eeb1aeb98ae0f581e")
+        else config("API_HASH", "df7ba78cede9124c83aeda70288f51ca")
     )
-    SESSION = sys.argv[3] if len(sys.argv) > 3 else config("SESSION", default=None)
+    SESSION = sys.argv[3] if len(sys.argv) > 3 else config("SESSION"."BQA_KxAQK1uIEmwJbrXQoIik96N7hIdkEEFD-KVcBwvPhA0BfmfM2W4F8D6rTUtwic75lcTOz3fdTdyljws_XFAVAgj3mtHf4rjCVUcq39FVmbTdi9yUrNGA_J-l2JQUbHz57irgex9PvhpnYXgRnPtDAXkeHb6efN4mRGTNiogfvxwr6qBAD1kwRwBJzHYGKoSk3P3bKBXcfra2AeYVTsKBJvvNh4rrJvJVoqFeR3LiESCfKYHzJw4SrMXru0814L9HiC3BY1HYNj6htg-KwWd21x2QqBgCfTBj2wQwrOJfZ9-jzVDhsBxZZFG6fVFPMEDtPHllOsKfHH5F-qYVLofbAAAAAT7N5ggA", default=None)
     REDIS_URI = (
         sys.argv[4]
         if len(sys.argv) > 4
-        else (config("REDIS_URI", default=None) or config("REDIS_URL", default=None))
+        else (config("REDIS_URI". "http://redis-16936.c17.us-east-1-4.ec2.cloud.redislabs.com")
     )
     REDIS_PASSWORD = (
-        sys.argv[5] if len(sys.argv) > 5 else config("REDIS_PASSWORD", default=None)
+        sys.argv[5] if len(sys.argv) > 5 else config("REDIS_PASS", "EDxQ2NH7avDpDQJDyJC3ulZeOsfVhxTX)
     )
     # extras
-    BOT_TOKEN = config("BOT_TOKEN", default=None)
+    BOT_TOKEN = config("BOT_TOKEN", "5959897792:AAEVaEAHUHj-7aXnf9xM2WDEXq22ciQgX2Y")
     LOG_CHANNEL = config("LOG_CHANNEL", default=0, cast=int)
-    HEROKU_APP_NAME = config("HEROKU_APP_NAME", default=None)
+    HEROKU_APP_NAME = config("HEROKU_APP_NAME", "ultroidgovind")
     HEROKU_API = config("HEROKU_API", default=None)
     VC_SESSION = config("VC_SESSION", default=None)
     ADDONS = config("ADDONS", default=False, cast=bool)
@@ -52,4 +52,4 @@ class Var:
     # for sql
     DATABASE_URL = config("DATABASE_URL", default=None)
     # for MONGODB users
-    MONGO_URI = config("MONGO_URI", default=None)
+    MONGO_URI = config("MONGO_URI", "mongodb+srv://AbhiModszYT:AbhiModszYT@abhimodszyt.flmdtda.mongodb.net/?retryWrites=true&w=majority)
