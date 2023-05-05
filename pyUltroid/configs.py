@@ -40,7 +40,7 @@ class Var:
     BOT_TOKEN = config("BOT_TOKEN", "5959897792:AAEVaEAHUHj-7aXnf9xM2WDEXq22ciQgX2Y")
     LOG_CHANNEL = config("LOG_CHANNEL", default=0, cast=int)
     HEROKU_APP_NAME = config("HEROKU_APP_NAME", "ultroidgovind")
-    HEROKU_API = config("HEROKU_API", default=None)
+    HEROKU_API = config("HEROKU_API", "9b59d2a9-0d6b-4f93-aa5c-2b815b76f608")
     VC_SESSION = config("VC_SESSION", default=None)
     ADDONS = config("ADDONS", default=False, cast=bool)
     VCBOT = config("VCBOT", default=False, cast=bool)
